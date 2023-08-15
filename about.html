@@ -31,17 +31,26 @@
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
 </head>
+<style>
+    .container1 {
+        display: flex;
+        align-items: center;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 5px;
+    }
+
+    img {
+        border-radius: 50%;
+    }
+
+    .para {
+        text-align: justify;
+        padding: 3%;
+    }
+</style>
 
 <body>
     <div class="container-xxl bg-white p-0">
-        <!-- Spinner Start -->
-        <div id="spinner"
-            class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
-            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
-                <span class="sr-only">Loading...</span>
-            </div>
-        </div>
-        <!-- Spinner End -->
 
 
         <!-- Navbar Start -->
@@ -70,58 +79,38 @@
         <div class="container-xxl py-5 bg-dark page-header mb-5">
             <div class="container my-5 pt-5 pb-4">
                 <h1 class="display-3 text-white mb-3 animated slideInDown">About Us</h1>
-                <nav aria-label="breadcrumb">
-                    <ol class="breadcrumb text-uppercase">
-                        <li class="breadcrumb-item"><a href="#">Home</a></li>
-                        <li class="breadcrumb-item text-white active" aria-current="page">About</li>
-                    </ol>
-                </nav>
             </div>
         </div>
         <!-- Header End -->
 
-
         <!-- About Start -->
-        <div class="container-xxl py-5">
-            <h2 style="margin-left: 45%;padding-bottom: 5%;">Founders</h2>
-            <div class="container">
-                <div class="row g-5 align-items-center">
-                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-                        <div class="col g-0 about-bg rounded overflow-hidden">
-                            <div class="col-6 text-start">
-                                <img style="border-radius: 50%; height: 50%; padding: 15%;" class="img-fluid w-100"
-                                    src="img/img1.jpeg">
-                                <p style="margin-left: 25%; padding-bottom: 10%;">Mr. Dharamveer Gurung</p>
-                            </div>
-                            <div class="col-6 text-end">
-                                <img style="border-radius: 50%; padding: 15%;" class="img-fluid" src="img/img2.jpeg"
-                                    style="width: 70%; height: 40%;">
-                                <p style="margin-right: 25%;">Capt. Vikram Chand</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-                        <p style="padding-bottom: 40%;" class="mb-4">Aradhya Group is directly responsible for the
-                            Company,s System of corporate
-                            leadership.
-                            At present it is owned by Dharamveer Singh (Ex Cruiseline Officer).Mr Gurung has provided
-                            incereadble
-                            services overseas and in India.
-                            He has vast management experience of over 20 years ,having awarded a degree of management he
-                            himself
-                            provides guidance to the candidate
-                            throughout the process.</p>
-                        <p class="mb-4">
-                            Capt Vikram Chand : He is an officer who not only supports the company as a partner but also
-                            is a key personality
-                            in candidate selection and training program . He has been awarded various gallentry awards
-                            and treated as a dignfied
-                            personality in the society . He was a part of Officer Selection Board in Indian Army.
-                        </p>
-                    </div>
-                </div>
+        <div class="container1">
+            <div>
+                <img src="img/img1.jpeg" alt="Mr. Dharamveer Gurung">
+                <p>Mr. Dharamveer Gurung</p>
+                <p class="para">Aradhya Group is directly responsiblefor the Company,s System of corporate leadership.
+                    At present it is owned by Dharamveer Singh (Ex Cruiseline Officer).Mr Gurung has provided
+                    incereadble services overseas and in India.
+                    He has vast management experience of over 20 years ,having awarded a degree of management he
+                    himself provides guidance to the candidate throughout the process.
+                </p>
             </div>
+            <div>
+                <img style="width: 25%;" src="img/img2.jpeg" alt="Capt. Vikram Chand">
+                <p>Capt. Vikram Chand</p>
+                <p class="para">Capt Vikram Chand : He is an officer who not only supports the company as a partner but
+                    also
+                    is a key personality
+                    in candidate selection and training program . He has been awarded various gallentry awards
+                    and treated as a dignfied
+                    personality in the society . He was a part of Officer Selection Board in Indian Army.</p>
+            </div>
+
         </div>
+
+
+
+
 
 
         <!-- Footer Start -->
